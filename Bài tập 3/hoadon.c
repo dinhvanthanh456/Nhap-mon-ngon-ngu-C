@@ -1,13 +1,9 @@
-#include <stdio.h>
-
-int main (){
-    //khai bao bien
-    float (don gian,thanh tien);
-    int (don gia,so luong,thanh tien);
-    printf("nhap vao don gia va so luong");
-    scanf ("%f",&dongia, &soluong);
-    //dieu kien
-    if("soluong >= 5", soluong);
-    getchar();
-    return 0;
-}    
+#include<stdio.h>
+int main(){
+	int don gia, so luong, thanh tien;
+    scanf("%d",&don gia);("%d",&so luong);thanh tien=don gia*so luong;
+    if(thanh tien>=500&&don gia>=5){thanh tien=(don gia*so luong)*0.5;
+	printf("%d", thanh tien);
+	}else{printf("%d",thanh tien);}
+	return 0; 
+	}
