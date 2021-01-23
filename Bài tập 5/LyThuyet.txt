@@ -1,0 +1,45 @@
+ ĐỀ SỐ : 01
+A: Bộ chữ viết trong ngôn ngữ C bao gồm những ký tự, ký hiệu sau: (phân biệt chữ in hoa và in thường):
+
+26 chữ cái latinh hoa A,B,C...Z
+26 chữ cái latinh thường a,b,c ...z.
+10 chữ số thập phân 0,1,2...9.
+Các ký hiệu toán học: +, -, *, /, =, <, >, (, )
+Các ký hiệu đặc biệt: :. , ; " ' _ @ # $ ! ^ [ ] { } ...
+Dấu cách hay khoảng trống, xuống hàng (\n) và tab (\t)
+
+B: các kiểu dữ  liệu cơ sở trong ngôn ngữ c gồm có:
+các kiêu dữ liêu sơ cấp trong c gôm 2 loại
+1: kiểu số nguyên 
+a: kiểu số nguyên 1 byte (8 bits)
+b: kiểu số nguyên 2 bytes (16 bits) 
+2: Hằng (cóntan	t)
+a: hằng số thực
+b: hằng số nguyên
+c: hằng ký tự 
+d: hằng chuỗi kí tự.
+ C: ngôn ngữ c có một hệ thống mở rộng cho việc khai báo các biến của các kiểu khác nhau. Những quy tắc dành cho các kiểu phức tạp có thể gây nhầm lẫn tùy theo các kiểu thiết kế của chúng.
+Có 4 kiểu cơ bản của các biến trong C; đó là: char, int, double và float.
+char: Đơn vị cơ bản nhất có thể địa chỉ hóa được; nó là một byte. Đây là một kiểu nguyên.
+int: Loại số nguyên theo kích cỡ tự nhiên nhất của các máy tính. Thông thường nó có thể lấy trọn một khoảng có thể địa chỉ hoá được của một word với độ lớn biến thiên từ 16, 32, hay 64 bit tùy theo kiến trúc của CPU và hệ điều hành.
+float: Một giá trị dấu chấm động có độ chính xác đơn.
+double: Một giá trị dấu chấm động có độ chính xác kép.
+D: biến toàn cục: Các biến được khai báo ở bên ngoài tất cả các hàm thì được gọi là biến toàn cục (external  or global variable). Các biến toàn cục có thể truy xuất và sử dụng ở mọi hàm trong chương trình. Biến toàn cục cũng tồn tại cho tới khi chương trình kết thúc.
+biến cục bộ: Các biến được khai báo trong 1 khối code thuộc lớp lưu trữ tự động (automatic or local variable) – hay chính là các biến cục bộ. Các biến cục bộ này chỉ tồn tại và chỉ có thể sử dụng bên trong khối code đó trong khi khối code đó đang thực thi.
+E: Định nghĩa hàm:Để định nghĩa một hàm trong lập trình C, các lập trình viên làm quen với khai niệm khai báo hàm (Khai báo nguyên mẫu hàm).Nguyên mẫu hàm chính là đặc tả của hàm cần xây dựng. Lưu ý nguyên mẫu hàm không có chứa nội dung thực thi hàm đó. Các nguyên mẫu của hàm sẽ được định nghĩa trong các file header hoặc ở đầu chương trình. Ví dụ như trong thư viện chuẩn math.h có hàm double sin(double x) trong Thư viện C trả về sin của góc x (giá trị radian). Vậy nguyên mẫu của hàm này chính là :double sin(double x);Với x là tham số, giá trị trả về là sin x.Cú pháp khai báo hàm :return-type function-name(argument declarations){statements return expresstion;}
+Trong đó :
+·       function-name : Tên hàm
+·       argument declarations: Danh sách các tham số truyền vào của hàm người ta còn gọi là danh sách các tham số hình thức
+·       statements: Các câu lệnh thực thi của hàm.
+·       return expresstion: Trả về một biểu thức nào đó. Câu lệnh này có thể nằm ở đâu đó trong dãy các câu lệnh đã được cài đặt.
+các loại hàm: Hàm là một tập hợp của một khối lệnh để thực thi một chức năng theo qui tắc sau
+  <kiểu-trả-về> tên_hàm(<danh sách tham số>)
+  {
+     <các_câu_lệnh>
+     return <biến (hay giá trị) có kiểu là kiểu_trả_về>;
+  }
+Có 2 loại hàm
+Hàm Trống Một loại Hàm không Có Tham Số và không có trả về một kết quả
+F: Hàm là một đoạn chương trình bao gồm một hoặc nhiều xử lý nhằm giải quyết một công việc nào đó và được xây dựng với mục đích TÁI SỬ DỤNG.
+Như vậy trong một chương trình nếu có những xử lý giống nhau chúng ta nên xây dựng hàm.
+Hàm có thể được xây dựng bởi lập trình viên hoặc hàm có sẵn trong ngôn ngữ lập trình. Ví dụ trong lập trình C, chúng ta có thể liệt kê các hàm có sẵn như printf, scanf, pow, sqrt,…
