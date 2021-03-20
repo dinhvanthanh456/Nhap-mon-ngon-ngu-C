@@ -3,6 +3,8 @@ Một biến trong C không là gì nhưng là một tên được đưa ra đ�
 để xác định cỡ và layout cho bộ nhớ biến đó. Phạm vi của giá trị có thể được dự trữ trong bộ nhớ, việc thiết lập các biểu thức có thể được áp dụng với biến.
 Tên của biến có thể bao gồm chữ cái, chữ số và dấu gạch dưới (_), nhưng nó phải bắt đầu bằng ký tự chữ cái hoặc dấu gạch dưới. Chữ hoa và chữ thường 
 là hai đối tượng phân biệt bởi vì C là ngôn ngữ phân biệt chữ hoa - chữ thường. Dựa vào những loại cơ bản giải thích ở chương trước, có những loại kiểu của biến cơ bản
+
+
 PHẦN 2: THỰC HÀNH
 1. Mô tả kỹ thực
 
@@ -17,5 +19,30 @@ int main(void) {
     S = (n*(n+1)*(2*n+1))/6;
   }
   printf ("S = 1^2 + 2^2+...+ %d^2 = %d",n,S);
+  return 0;
+}
+
+
+
+2 Yêu cầu kỹ thuật:
+
+#include <stdio.h>
+
+int main(void) {
+  // khai bao bien R kieu double;
+  double R = 2.5;
+  // khai bao hang ten PI kieu double;
+  double PI = 3.14;
+  // khai bao cac bien CV va DT kieu double;
+  double CV, DT; 
+  printf ("R = %.1f,R",R);
+  printf ("\t");
+  printf ("PI = %.2f,PI",PI);
+  CV = 2*R*PI;
+  DT = R*R*PI;
+  printf ("\n2*R*PI\nR*R*Pi \n");
+  printf ("\n");
+  printf ("CV = %.1f \t DT = %.2f",CV, DT);
+  getchar() ;
   return 0;
 }
